@@ -1,12 +1,23 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Gmail Image Max Width",
-  "version": "1.0",
+  "version": "2.0",
   "description": "A Chrome extension to detect and set the max width of inline images in Gmail.",
-  "permissions": [
+  "host_permissions": [
     "activeTab",
     "https://mail.google.com/*"
   ],
+  "icons": {
+    "16": "favicon-16x16.png",
+    "32": "favicon-32x32.png",
+    "128": "ms-icon-144x144.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
   "content_scripts": [
     {
       "matches": [
