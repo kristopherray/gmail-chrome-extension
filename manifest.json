@@ -4,7 +4,6 @@
   "version": "2.0",
   "description": "A Chrome extension to detect and set the max width of inline images in Gmail.",
   "host_permissions": [
-    "activeTab",
     "https://mail.google.com/*"
   ],
   "icons": {
