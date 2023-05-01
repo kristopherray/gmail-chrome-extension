@@ -4,6 +4,7 @@ function setMaxWidthForInlineImages() {
     // console.log('Setting max width for image: ' + image.src);
     // console.log('Image style before: ' + image.style.cssText);
     image.style.maxWidth = "100%";
+    image.style.height = "auto"; // Preserve aspect ratio
     // console.log('Image style after: ' + image.style.cssText);
   });
 }
